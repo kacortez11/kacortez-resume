@@ -1,0 +1,22 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="deedy" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+    <texify>
+      <compiler>LUALATEX</compiler>
+      <compiler-path>$USER_HOME$/texlive/2020/bin/x86_64-linux/lualatex</compiler-path>
+      <sumatra-path />
+      <viewer-command />
+      <compiler-arguments />
+      <envs />
+      <main-file>$PROJECT_DIR$/src/deedy/kacortez_deedycv.tex</main-file>
+      <output-path>$PROJECT_DIR$/out</output-path>
+      <auxil-path>$USER_HOME$</auxil-path>
+      <compile-twice>true</compile-twice>
+      <output-format>PDF</output-format>
+      <latex-distribution>TEXLIVE</latex-distribution>
+      <has-been-run>true</has-been-run>
+      <bib-run-config>[]</bib-run-config>
+      <makeindex-run-config />
+    </texify>
+    <method v="2" />
+  </configuration>
+</component>

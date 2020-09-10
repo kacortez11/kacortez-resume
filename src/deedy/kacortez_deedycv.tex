@@ -1,0 +1,275 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Krystel Arriane}{Cortez}{%\urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
+\href{mailto:krystelarrianecortez@gmail.com}{krystelarrianecortez@gmail.com} | +63.917.831.2627 | Quezon City, Philippines % \href{mailto:kacortez2@up.edu.ph}{kacortez2@up.edu.ph}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Expert:}
+Python 
+\textbullet{} Flask 
+\textbullet{} C / C++ 
+\\\location{Proficient:}
+Django 
+\textbullet{} PostgreSQL
+\textbullet{} Shell 
+\textbullet{} Lua
+\textbullet{} Angular
+\textbullet{} Vue.js
+\\\location{Novice:}
+\LaTeX
+\textbullet{} PHP 
+\textbullet{} MySQL
+\sectionsep
+
+\subsection{Operating System}
+Windows 
+\textbullet{} Linux 
+\sectionsep
+
+\subsection{Versioning System}
+Git 
+\textbullet{} SVN 
+\sectionsep
+
+\subsection{Tools and Libraries}
+Cerberus 
+\textbullet{} Docker 
+\textbullet{} Celery
+\textbullet{} RabbitMQ \\
+\sectionsep
+
+\subsection{Others}
+Agile methodology 
+\textbullet{} Lean Six Sigma 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+%Facebook:// \href{https://facebook/dd}{\bf dd} \\
+Github:// \href{https://github.com/kacortez11}{\bf kacortez11} \\
+LinkedIn://  \href{https://www.linkedin.com/in/kacortez}{\bf kacortez} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+%Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+%\subsection{Graduate}
+%Advanced Machine Learning \\
+%Open Source Software Engineering \\
+%Advanced Interactive Graphics \\
+%Compilers + Practicum \\
+%Cloud Computing \\
+%Evolutionary Computation \\
+%Defending Computer Networks \\
+%Machine Learning \\
+%\sectionsep
+
+%\subsection{Undergraduate}
+%Information Retrieval \\
+%Operating Systems \\
+%Artificial Intelligence + Practicum \\
+%Functional Programming \\
+%Computer Graphics + Practicum \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+%Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{First Digital Finance Corporation}
+\\\descript{Web Developer }
+\location{January 2019 – July 2020 | Makati City, Philippines}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Worked as part of back-end team primarily for the Billease Merchants product
+    \item Developed and integrates with external web services APIs
+    \item Developed documentation for our APIs
+    \item Reviewed code of other developers
+    \item Designs and develop database schema and SQL
+    \item Provides support for partner merchants
+    \item Investigated and resolved product issues
+    \item Improved the run time of the checkout process by up to 35\% 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Nokia Technology Center Philippines}
+\\\descript{Research and Development Engineer }
+\location{March 2015 – December 2018 | Quezon City, Philippines}
+\begin{tightemize}
+    \item Consistently achieved monthly maintenance and bug fixing goals for 2017 and 2018 
+    \item Delivered 180\% of 2016 objectives for combined maintenance items and internal improvement backlog in compliance to delivery and quality criteria
+    \item Implemented an automated machine information collection script using Bash scripting that reduced bug fixing investigation effort and cycle time by 13\% 
+    \item Handled Fault Coordinator Officer duties at times 
+    \item Volunteered to conduct on-boarding training for new hires 
+    \item Actively participated in the creation of several domain-wide policies 
+    \item Initiated process improvements on maintenance handling  
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of the Philippines Los Banos}
+\descript{BS in Computer Science}
+\location{Dec 2014 | College, Laguna}
+\sectionsep
+
+%\subsection{Cornell University}
+%\descript{BS in Computer Science}
+%\location{May 2014 | Ithaca, NY}
+%College of Engineering \\
+%Magna Cum Laude\\
+%\location{ Cum. GPA: 3.83 / 4.0 \\
+%Major GPA: 3.9 / 4.0}
+%\sectionsep
+
+%\subsection{Siniloan Nationa High School}
+%\location{Grad. April 2010|  Siniloan, Laguna}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Research}
+%\runsubsection{Cornell Robot Learning Lab}
+%\descript{| Researcher}
+%\location{Jan 2014 – Jan 2015 | Ithaca, NY}
+%Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+%\sectionsep
+%
+%\runsubsection{Cornell Phonetics Lab}
+%\descript{| Head Undergraduate Researcher}
+%\location{Mar 2012 – May 2013 | Ithaca, NY}
+%Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}\label{sec:publications}
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+%\nocite{*}
+
+\end{minipage} 
+\end{document}
