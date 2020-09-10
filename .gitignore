@@ -1,4 +1,5 @@
-auxil
-out
+.idea
+*auxil*
+*out*
 kacortez-resume.iml
 texput.log
