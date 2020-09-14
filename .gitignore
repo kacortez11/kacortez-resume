@@ -1,6 +1,7 @@
 .idea
-*auxil*
-*out*
 kacortez-resume.iml
-texput.log
 *.run*
+*aux*
+*out*
+*log*
+*.synctex.gz*
