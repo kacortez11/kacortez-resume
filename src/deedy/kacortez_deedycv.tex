@@ -45,7 +45,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\documentclass[]{deedy-resume-openfont}
+\documentclass[top=0in]{deedy-resume-openfont}
 \usepackage{fancyhdr}
  
 \pagestyle{fancy}
@@ -88,11 +88,11 @@ Python
 \textbullet{} Flask 
 \textbullet{} C / C++ 
 \\\location{Proficient:}
-Django 
-\textbullet{} PostgreSQL
+PostgreSQL
 \textbullet{} Shell 
 \textbullet{} Lua
-\textbullet{} HTML5
+\textbullet{} Django
+\textbullet{}HTML5
 \textbullet{} Angular
 \textbullet{} Vue.js
 \\\location{Novice:}
@@ -166,13 +166,16 @@ LinkedIn://  \href{https://www.linkedin.com/in/kacortez}{\bf kacortez} \\
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\end{minipage}
 \hfill
 \begin{minipage}[t]{0.66\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Objectives}
+\sectionsep
 
 \section{Experience}
 
@@ -268,9 +271,11 @@ LinkedIn://  \href{https://www.linkedin.com/in/kacortez}{\bf kacortez} \\
 
 \section{Publications}\label{sec:publications}
 \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
-\bibliographystyle{abbrv}
-\bibliography{publications}
-%\nocite{*}
+Cortez, K. A. and Magno, K. J. H. "Identification of Philippine Algae Species from Images using Naive Bayes Classifier."
+Proceedings of the 15th Philippine Computing Science Congress. (2015): 92--99
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{pcsc2015}
 
 \end{minipage} 
 \end{document}
