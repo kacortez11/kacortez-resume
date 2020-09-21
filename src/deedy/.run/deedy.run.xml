@@ -8,7 +8,7 @@
       <compiler-arguments />
       <envs />
       <main-file>$PROJECT_DIR$/src/deedy/kacortez_deedycv.tex</main-file>
-      <output-path>$PROJECT_DIR$/out</output-path>
+      <output-path>$PROJECT_DIR$/src/deedy</output-path>
       <auxil-path>$USER_HOME$</auxil-path>
       <compile-twice>true</compile-twice>
       <output-format>PDF</output-format>
